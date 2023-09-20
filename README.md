@@ -1,27 +1,22 @@
-# React + TypeScript + Vite
+# Laundry Operation Viewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository is for web application which shows Laundry operation. It was developed for [Hydrangea Hakone](https://hydrangea-hakone.com).
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Hydrangea Hakone](https://hydrangea-hakone.com) is rental appertment which is located at Miyagino area in Hakone.
 
-## Expanding the ESLint configuration
+It has a social coin laundry room which all residents can use, and there are 2 waching machines and 2 drying machines.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+![laundry room in Hydrangea hakone](https://github.com/shizuka-na-kazushi/laundry-watcher/blob/037744bdbaa6203e2c0d0221a4991aa05b9482ba/src/assets/laundry-header-image.png?raw=true)
 
-- Configure the top-level `parserOptions` property like this:
+# How it works?
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+Small single board computer that connects to 4 indivisual vibration sensors. ESP32 based computer is detects vibration of machines. As ESP32 support WiFi connection as well as Firebase client library, the status is tranfer to [Firebase realtime database](https://firebase.google.com/docs/database?hl=ja).
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+This web app is just showing the status in firebase realtime database, which is stored by ESP32 board. 
+
+Thanks to functionality of Firebase, web app can update screen almost ``real time``. 
+
+# Where is it hosting?
+
+Wait a moment. now, preparing!
