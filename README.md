@@ -3,7 +3,7 @@
 This repository is for web application which shows Laundry operation. It was developed for [Hydrangea Hakone](https://hydrangea-hakone.com).
 
 
-[Hydrangea Hakone](https://hydrangea-hakone.com) is rental apartment which is located at Miyagino area in Hakone.
+[Hydrangea Hakone](https://hydrangea-hakone.com) is rental apartment which is located at Miyagino area in Hakone, Japan.
 
 It has a social coin laundry room which all residents can use, and there are 2 washing machines and 2 drying machines.
 
@@ -17,6 +17,8 @@ This web app is just showing the status in firebase realtime database, which is 
 
 Thanks to functionality of Firebase, web app can update screen almost ``real time``. 
 
+ESP32 board source code is also published in Github, [vib-sensor-data-sender](https://github.com/shizuka-na-kazushi/vib-sensor-data-sender) repository.
+
 # Where is it hosting?
 
-Wait a moment. now, preparing!
+This web app is hosted at [laundry-watcher.web.app](https://laundry-watcher.web.app/?github).
